@@ -42,7 +42,7 @@ public class SalesMRJob {
 			
 			StringBuilder sb = new StringBuilder().append(mean + "\t")
 					.append(variance + "\t")
-					.append(calcSalesDrop(Double.parseDouble(split[13]), mean))
+					.append(calcSalesDrop(Double.parseDouble(split[13]), mean) + "\t")
 					.append(monthsBelow(datavalues, mean));
 			
 			userid.set(split[0]);
